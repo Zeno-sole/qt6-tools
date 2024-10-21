@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 6.6.0 amd64
+# SymbolsHelper-Confirmed: 6.8.0 amd64 arm64 loong64
 libQt6DesignerComponents.so.6 libqt6designercomponents6 #MINVER#
 | libqt6designercomponents6 #MINVER#, qt6-designer-abi (= 6.8.0)
 * Build-Depends-Package: qt6-tools-dev
+ NonQt@NonQt 6.8.0
  Qt_6@Qt_6 6.6.0
  (symver)Qt_6_PRIVATE_API 0
  _ZGVZN9QMetaType21registerConverterImplI4QMapIi5QIconE9QIterableI16QMetaAssociationEEEbSt8functionIFbPKvPvEES_S_E10unregister@Qt_6 6.6.0
@@ -19,12 +20,13 @@ libQt6DesignerComponents.so.6 libqt6designercomponents6 #MINVER#
  _ZN19QDesignerComponents16createFormEditorEP7QObject@Qt_6 6.6.0
  _ZN19QDesignerComponents17initializePluginsEP28QDesignerFormEditorInterface@Qt_6 6.6.0
  _ZN19QDesignerComponents18createActionEditorEP28QDesignerFormEditorInterfaceP7QWidget@Qt_6 6.6.0
+ _ZN19QDesignerComponents18defaultPluginPathsEv@Qt_6 6.8.0
  _ZN19QDesignerComponents19initializeResourcesEv@Qt_6 6.6.0
  _ZN19QDesignerComponents20createPropertyEditorEP28QDesignerFormEditorInterfaceP7QWidget@Qt_6 6.6.0
  _ZN19QDesignerComponents20createResourceEditorEP28QDesignerFormEditorInterfaceP7QWidget@Qt_6 6.6.0
  _ZN19QDesignerComponents21createObjectInspectorEP28QDesignerFormEditorInterfaceP7QWidget@Qt_6 6.6.0
  _ZN19QDesignerComponents22createSignalSlotEditorEP28QDesignerFormEditorInterfaceP7QWidget@Qt_6 6.6.0
- _ZSt19piecewise_construct@Qt_6 6.6.0
+ _ZN19QDesignerComponents31createFormEditorWithPluginPathsERK5QListI7QStringEP7QObject@Qt_6 6.8.0
  _ZTI29QDesignerOptionsPageInterface@Qt_6 6.6.0
  _ZTI34QDesignerFormEditorPluginInterface@Qt_6 6.6.0
  _ZTI34QDesignerFormWindowCursorInterface@Qt_6 6.6.0

@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 6.6.1 amd64
+# SymbolsHelper-Confirmed: 6.8.0 amd64 arm64 loong64
 libQt6Designer.so.6 libqt6designer6 #MINVER#
 | libqt6designer6 #MINVER#, qt6-designer-abi (= 6.8.0)
 * Build-Depends-Package: qt6-tools-dev
+ NonQt@NonQt 6.8.0
  Qt_6@Qt_6 6.6.0
  (symver)Qt_6_PRIVATE_API 0
  _Z20domPropertyToVariantP20QAbstractFormBuilderPK11QMetaObjectPK11DomProperty@Qt_6 6.6.0
@@ -480,6 +481,9 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN16QDesignerMenuBarD1Ev@Qt_6 6.6.0
  _ZN16QDesignerMenuBarD2Ev@Qt_6 6.6.0
  _ZN16QResourceBuilder14iconStateFlagsEPK15DomResourceIcon@Qt_6 6.6.0
+ _ZN16QResourceBuilder14themeIconIndexE11QStringView@Qt_6 6.8.0
+ _ZN16QResourceBuilder14themeIconNamesEv@Qt_6 6.8.0
+ _ZN16QResourceBuilder27fullyQualifiedThemeIconNameEi@Qt_6 6.8.0
  _ZN16QResourceBuilderC1Ev@Qt_6 6.6.0
  _ZN16QResourceBuilderC2Ev@Qt_6 6.6.0
  _ZN16QResourceBuilderD0Ev@Qt_6 6.6.0
@@ -815,7 +819,13 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN18qdesigner_internal13WidgetFactoryD1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal13WidgetFactoryD2Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal13appendDerivedEP32QDesignerWidgetDataBaseInterfaceRK7QStringS4_S4_S4_bb@Qt_6 6.6.0
- _ZN18qdesigner_internal13createIconSetERK7QString@Qt_6 6.6.0
+ _ZN18qdesigner_internal13comparesEqualERKNS_13DeviceProfileES2_@Qt_6 6.8.0
+ _ZN18qdesigner_internal13comparesEqualERKNS_18TreeWidgetContents12ItemContentsES3_@Qt_6 6.8.0
+ _ZN18qdesigner_internal13comparesEqualERKNS_19TableWidgetContentsES2_@Qt_6 6.8.0
+ _ZN18qdesigner_internal13comparesEqualERKNS_22PropertySheetIconValueES2_@Qt_6 6.8.0
+ _ZN18qdesigner_internal13createIconSetE11QStringView@Qt_6 6.8.0
+ _ZN18qdesigner_internal13createIconSetE13QLatin1String@Qt_6 6.8.0
+ _ZN18qdesigner_internal13createIconSetEN5QIcon9ThemeIconE13QLatin1String@Qt_6 6.8.0
  _ZN18qdesigner_internal13dataDirectoryEv@Qt_6 6.6.0
  _ZN18qdesigner_internal13promoteWidgetEP28QDesignerFormEditorInterfaceP7QWidgetRK7QString@Qt_6 6.6.0
  _ZN18qdesigner_internal14ConnectionEdit10paintEventEP11QPaintEvent@Qt_6 6.6.0
@@ -1294,6 +1304,19 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN18qdesigner_internal19DesignerPixmapCache8reloadedEv@Qt_6 6.6.0
  _ZN18qdesigner_internal19DesignerPixmapCacheC1EP7QObject@Qt_6 6.6.0
  _ZN18qdesigner_internal19DesignerPixmapCacheC2EP7QObject@Qt_6 6.6.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor11qt_metacallEN11QMetaObject4CallEiPPv@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor11qt_metacastEPKc@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor12setThemeEnumEi@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor14createComboBoxEP7QWidget@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor16staticMetaObjectE@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor5resetEv@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor6editedEi@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditor8iconNameEi@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditorC1EP7QWidgetb@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditorC2EP7QWidgetb@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditorD0Ev@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditorD1Ev@Qt_6 6.8.0
+ _ZN18qdesigner_internal19IconThemeEnumEditorD2Ev@Qt_6 6.8.0
  _ZN18qdesigner_internal19InsertWidgetCommand18refreshBuddyLabelsEv@Qt_6 6.6.0
  _ZN18qdesigner_internal19InsertWidgetCommand4initEP7QWidgetbii@Qt_6 6.6.0
  _ZN18qdesigner_internal19InsertWidgetCommand4redoEv@Qt_6 6.6.0
@@ -1471,17 +1494,21 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN18qdesigner_internal22PropertySheetFlagValueC1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC2EiRKNS_17DesignerMetaFlagsE@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetFlagValueC2Ev@Qt_6 6.6.0
+ _ZN18qdesigner_internal22PropertySheetIconValue12setThemeEnumEi@Qt_6 6.8.0
  _ZN18qdesigner_internal22PropertySheetIconValue6assignERKS0_j@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValue8setThemeERK7QString@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValue9setPixmapEN5QIcon4ModeENS1_5StateERKNS_24PropertySheetPixmapValueE@Qt_6 6.6.0
+ _ZN18qdesigner_internal22PropertySheetIconValueC1EOS0_@Qt_6 6.8.0
  _ZN18qdesigner_internal22PropertySheetIconValueC1ERKNS_24PropertySheetPixmapValueE@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueC1ERKS0_@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueC1Ev@Qt_6 6.6.0
+ _ZN18qdesigner_internal22PropertySheetIconValueC2EOS0_@Qt_6 6.8.0
  _ZN18qdesigner_internal22PropertySheetIconValueC2ERKNS_24PropertySheetPixmapValueE@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueC2ERKS0_@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueC2Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueD1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal22PropertySheetIconValueD2Ev@Qt_6 6.6.0
+ _ZN18qdesigner_internal22PropertySheetIconValueaSEOS0_@Qt_6 6.8.0
  _ZN18qdesigner_internal22PropertySheetIconValueaSERKS0_@Qt_6 6.6.0
  _ZN18qdesigner_internal22QDesignerIntrospectionC1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal22QDesignerIntrospectionC2Ev@Qt_6 6.6.0
@@ -1725,6 +1752,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN18qdesigner_internal4Grid14fromVariantMapERK4QMapI7QString8QVariantE@Qt_6 6.6.0
  _ZN18qdesigner_internal4GridC1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal4GridC2Ev@Qt_6 6.6.0
+ _ZN18qdesigner_internal5qHashERKNS_22PropertySheetIconValueEm@Qt_6 6.8.0
  _ZN18qdesigner_internal5qtifyERK7QString@Qt_6 6.6.0
  _ZN18qdesigner_internal6Layout10undoLayoutEv@Qt_6 6.6.0
  _ZN18qdesigner_internal6Layout11breakLayoutEv@Qt_6 6.6.0
@@ -1829,6 +1857,12 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN19QDesignerDockWidgetD0Ev@Qt_6 6.6.0
  _ZN19QDesignerDockWidgetD1Ev@Qt_6 6.6.0
  _ZN19QDesignerDockWidgetD2Ev@Qt_6 6.6.0
+ (arch=!arm64)_ZN19QFormBuilderStrings13iconAttributeE@Qt_6 6.8.0
+ (arch=!arm64)_ZN19QFormBuilderStrings14flagsAttributeE@Qt_6 6.8.0
+ (arch=!arm64)_ZN19QFormBuilderStrings14labelAttributeE@Qt_6 6.8.0
+ (arch=!arm64)_ZN19QFormBuilderStrings14titleAttributeE@Qt_6 6.8.0
+ (arch=!arm64)_ZN19QFormBuilderStrings16toolTipAttributeE@Qt_6 6.8.0
+ (arch=!arm64)_ZN19QFormBuilderStrings18whatsThisAttributeE@Qt_6 6.8.0
  _ZN19QFormBuilderStrings8instanceEv@Qt_6 6.6.0
  _ZN19QFormBuilderStringsC1Ev@Qt_6 6.6.0
  _ZN19QFormBuilderStringsC2Ev@Qt_6 6.6.0
@@ -1975,7 +2009,9 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN22QDesignerPluginManager18setDisabledPluginsERK5QListI7QStringE@Qt_6 6.6.0
  _ZN22QDesignerPluginManager23updateRegisteredPluginsEv@Qt_6 6.6.0
  _ZN22QDesignerPluginManagerC1EP28QDesignerFormEditorInterface@Qt_6 6.6.0
+ _ZN22QDesignerPluginManagerC1ERK5QListI7QStringEP28QDesignerFormEditorInterface@Qt_6 6.8.0
  _ZN22QDesignerPluginManagerC2EP28QDesignerFormEditorInterface@Qt_6 6.6.0
+ _ZN22QDesignerPluginManagerC2ERK5QListI7QStringEP28QDesignerFormEditorInterface@Qt_6 6.8.0
  _ZN22QDesignerPluginManagerD0Ev@Qt_6 6.6.0
  _ZN22QDesignerPluginManagerD1Ev@Qt_6 6.6.0
  _ZN22QDesignerPluginManagerD2Ev@Qt_6 6.6.0
@@ -2720,7 +2756,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal13DeviceProfile5applyEPK28QDesignerFormEditorInterfaceP7QWidgetNS0_9ApplyModeE@Qt_6 6.6.0
  _ZNK18qdesigner_internal13DeviceProfile5styleEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal13DeviceProfile5toXmlEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal13DeviceProfile6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal13DeviceProfile7isEmptyEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal13DeviceProfile8toStringEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal13NewFormWidget10metaObjectEv@Qt_6 6.6.0
@@ -2800,7 +2835,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal15InvisibleWidget10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal16DesignerMetaEnum18messageParseFailedERK7QString@Qt_6 6.6.0
  _ZNK18qdesigner_internal16DesignerMetaEnum21messageToStringFailedEi@Qt_6 6.6.0
- _ZNK18qdesigner_internal16DesignerMetaEnum8toStringEiNS0_17SerializationModeEPb@Qt_6 6.6.0
  _ZNK18qdesigner_internal16LayoutProperties15toPropertySheetEPK28QDesignerFormEditorInterfaceP7QLayoutib@Qt_6 6.6.0
  _ZNK18qdesigner_internal16MetaDataBaseItem11fakeSignalsEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal16MetaDataBaseItem15customClassNameEv@Qt_6 6.6.0
@@ -2821,7 +2855,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal17DesignerMetaFlags10parseFlagsERK7QStringPb@Qt_6 6.6.0
  _ZNK18qdesigner_internal17DesignerMetaFlags18messageParseFailedERK7QString@Qt_6 6.6.0
  _ZNK18qdesigner_internal17DesignerMetaFlags5flagsEi@Qt_6 6.6.0
- _ZNK18qdesigner_internal17DesignerMetaFlags8toStringEiNS0_17SerializationModeE@Qt_6 6.6.0
  _ZNK18qdesigner_internal17PromotionTaskMenu10formWindowEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal17PromotionTaskMenu10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal17PromotionTaskMenu22promotionSelectionListEP28QDesignerFormWindowInterface@Qt_6 6.6.0
@@ -2857,9 +2890,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal18ToolBarEventFilter10formWindowEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal18ToolBarEventFilter10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal18TreeWidgetContents12ItemContents14createTreeItemEPNS_17DesignerIconCacheEb@Qt_6 6.6.0
- _ZNK18qdesigner_internal18TreeWidgetContents12ItemContentseqERKS1_@Qt_6 6.6.0
  _ZNK18qdesigner_internal18TreeWidgetContents17applyToTreeWidgetEP11QTreeWidgetPNS_17DesignerIconCacheEb@Qt_6 6.6.0
- _ZNK18qdesigner_internal18TreeWidgetContentseqERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal18WidgetDataBaseItem10isPromotedEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal18WidgetDataBaseItem10pluginPathEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal18WidgetDataBaseItem11fakeSignalsEv@Qt_6 6.6.0
@@ -2879,6 +2910,8 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal18WidgetDataBaseItem9whatsThisEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal19DesignerPixmapCache10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal19DesignerPixmapCache6pixmapERKNS_24PropertySheetPixmapValueE@Qt_6 6.6.0
+ _ZNK18qdesigner_internal19IconThemeEnumEditor10metaObjectEv@Qt_6 6.8.0
+ _ZNK18qdesigner_internal19IconThemeEnumEditor9themeEnumEv@Qt_6 6.8.0
  _ZNK18qdesigner_internal19PropertyListCommand12propertyNameEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal19PropertyListCommand13canMergeListsERKSt6vectorISt10unique_ptrINS_14PropertyHelperESt14default_deleteIS3_EESaIS6_EE@Qt_6 6.6.0
  _ZNK18qdesigner_internal19PropertyListCommand15specialPropertyEv@Qt_6 6.6.0
@@ -2895,7 +2928,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal19QDesignerWidgetItem6expandEP5QSize@Qt_6 6.6.0
  _ZNK18qdesigner_internal19QDesignerWidgetItem8sizeHintEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal19TableWidgetContents18applyToTableWidgetEP12QTableWidgetPNS_17DesignerIconCacheEb@Qt_6 6.6.0
- _ZNK18qdesigner_internal19TableWidgetContentseqERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal20CursorSelectionState7restoreEP28QDesignerFormWindowInterface@Qt_6 6.6.0
  _ZNK18qdesigner_internal20FormBuilderClipboard5emptyEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal20PreviewConfiguration10deviceSkinEv@Qt_6 6.6.0
@@ -2913,13 +2945,12 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal22PropertySheetIconValue4maskEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue5pathsEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue5themeEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal22PropertySheetIconValue6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue6pixmapEN5QIcon4ModeENS1_5StateE@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue6themedEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue7compareERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue7isEmptyEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal22PropertySheetIconValue8unthemedEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal22PropertySheetIconValueltERKS0_@Qt_6 6.6.0
+ _ZNK18qdesigner_internal22PropertySheetIconValue9themeEnumEv@Qt_6 6.8.0
  _ZNK18qdesigner_internal22QDesignerIntrospection10metaObjectEPK7QObject@Qt_6 6.6.0
  _ZNK18qdesigner_internal22QDesignerIntrospection24metaObjectForQMetaObjectEPK11QMetaObject@Qt_6 6.6.0
  _ZNK18qdesigner_internal22StyleSheetEditorDialog10metaObjectEv@Qt_6 6.6.0
@@ -2949,9 +2980,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal24ActionRepositoryMimeData7formatsEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal24ChangeCurrentPageCommand18containerExtensionEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal24PropertySheetPixmapValue4pathEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal24PropertySheetPixmapValue7compareERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal24PropertySheetStringValue5valueEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal24PropertySheetStringValue6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal24QDesignerObjectInspector10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal26PreviewConfigurationWidget10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal26PreviewConfigurationWidget33PreviewConfigurationWidgetPrivate13canRemoveSkinEi@Qt_6 6.6.0
@@ -2964,12 +2993,9 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal26QDesignerFormWindowCommand4coreEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal26QDesignerFormWindowManager10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal28PropertySheetStringListValue5valueEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal28PropertySheetStringListValue6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal29PropertySheetKeySequenceValue11standardKeyEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal29PropertySheetKeySequenceValue13isStandardKeyEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal29PropertySheetKeySequenceValue5valueEv@Qt_6 6.6.0
- _ZNK18qdesigner_internal29PropertySheetKeySequenceValue6equalsERKS0_@Qt_6 6.6.0
- _ZNK18qdesigner_internal29PropertySheetTranslatableData6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal30StyleSheetPropertyEditorDialog10metaObjectEv@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid12toVariantMapEb@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid15addToVariantMapER4QMapI7QString8QVariantEb@Qt_6 6.6.0
@@ -2977,7 +3003,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK18qdesigner_internal4Grid19widgetHandleAdjustYEi@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid5paintEP7QWidgetP11QPaintEvent@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid5paintER8QPainterPK7QWidgetP11QPaintEvent@Qt_6 6.6.0
- _ZNK18qdesigner_internal4Grid6equalsERKS0_@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid9snapPointERK6QPoint@Qt_6 6.6.0
  _ZNK18qdesigner_internal4Grid9snapValueEii@Qt_6 6.6.0
  _ZNK18qdesigner_internal6Layout10metaObjectEv@Qt_6 6.6.0
@@ -3216,7 +3241,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZNK9DomSpacer5writeER16QXmlStreamWriterRK7QString@Qt_6 6.6.0
  _ZNK9DomString5writeER16QXmlStreamWriterRK7QString@Qt_6 6.6.0
  _ZNK9DomWidget5writeER16QXmlStreamWriterRK7QString@Qt_6 6.6.0
- _ZSt19piecewise_construct@Qt_6 6.6.0
  _ZTI12QFormBuilder@Qt_6 6.6.0
  _ZTI12QTextBuilder@Qt_6 6.6.0
  _ZTI13QDesignerMenu@Qt_6 6.6.0
@@ -3322,6 +3346,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZTIN18qdesigner_internal19ChangeZOrderCommandE@Qt_6 6.6.0
  _ZTIN18qdesigner_internal19DeleteWidgetCommandE@Qt_6 6.6.0
  _ZTIN18qdesigner_internal19DesignerPixmapCacheE@Qt_6 6.6.0
+ _ZTIN18qdesigner_internal19IconThemeEnumEditorE@Qt_6 6.8.0
  _ZTIN18qdesigner_internal19InsertWidgetCommandE@Qt_6 6.6.0
  _ZTIN18qdesigner_internal19PropertyListCommandE@Qt_6 6.6.0
  _ZTIN18qdesigner_internal19QDesignerWidgetItemE@Qt_6 6.6.0
@@ -3479,6 +3504,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZTSN18qdesigner_internal19ChangeZOrderCommandE@Qt_6 6.6.0
  _ZTSN18qdesigner_internal19DeleteWidgetCommandE@Qt_6 6.6.0
  _ZTSN18qdesigner_internal19DesignerPixmapCacheE@Qt_6 6.6.0
+ _ZTSN18qdesigner_internal19IconThemeEnumEditorE@Qt_6 6.8.0
  _ZTSN18qdesigner_internal19InsertWidgetCommandE@Qt_6 6.6.0
  _ZTSN18qdesigner_internal19PropertyListCommandE@Qt_6 6.6.0
  _ZTSN18qdesigner_internal19QDesignerWidgetItemE@Qt_6 6.6.0
@@ -3634,6 +3660,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZTVN18qdesigner_internal19ChangeZOrderCommandE@Qt_6 6.6.0
  _ZTVN18qdesigner_internal19DeleteWidgetCommandE@Qt_6 6.6.0
  _ZTVN18qdesigner_internal19DesignerPixmapCacheE@Qt_6 6.6.0
+ _ZTVN18qdesigner_internal19IconThemeEnumEditorE@Qt_6 6.8.0
  _ZTVN18qdesigner_internal19InsertWidgetCommandE@Qt_6 6.6.0
  _ZTVN18qdesigner_internal19PropertyListCommandE@Qt_6 6.6.0
  _ZTVN18qdesigner_internal19QDesignerWidgetItemE@Qt_6 6.6.0
@@ -3761,6 +3788,7 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  (c++)"non-virtual thunk to qdesigner_internal::GridPanel::~GridPanel()@Qt_6" 6.6.0
  (c++)"non-virtual thunk to qdesigner_internal::IconSelector::~IconSelector()@Qt_6" 6.6.0
  (c++)"non-virtual thunk to qdesigner_internal::IconThemeEditor::~IconThemeEditor()@Qt_6" 6.6.0
+ (c++)"non-virtual thunk to qdesigner_internal::IconThemeEnumEditor::~IconThemeEnumEditor()@Qt_6" 6.8.0
  (c++)"non-virtual thunk to qdesigner_internal::LanguageResourceDialog::~LanguageResourceDialog()@Qt_6" 6.6.0
  (c++)"non-virtual thunk to qdesigner_internal::NewFormWidget::~NewFormWidget()@Qt_6" 6.6.0
  (c++)"non-virtual thunk to qdesigner_internal::OrderDialog::~OrderDialog()@Qt_6" 6.6.0

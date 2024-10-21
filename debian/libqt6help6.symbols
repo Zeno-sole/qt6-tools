@@ -1,7 +1,8 @@
-# SymbolsHelper-Confirmed: 6.6.0 amd64
+# SymbolsHelper-Confirmed: 6.8.0 amd64 arm64 loong64
 libQt6Help.so.6 libqt6help6 #MINVER#
 | libqt6help6 #MINVER#, qt6-help-abi (= 6.8.0)
 * Build-Depends-Package: qt6-tools-dev
+ NonQt@NonQt 6.8.0
  Qt_6@Qt_6 6.6.0
  (symver)Qt_6_PRIVATE_API 0
  _ZN11QHelpEngine11indexWidgetEv@Qt_6 6.6.0
@@ -43,7 +44,9 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZN15QHelpEngineCore7warningERK7QString@Qt_6 6.6.0
  _ZN15QHelpEngineCore8metaDataERK7QStringS2_@Qt_6 6.6.0
  _ZN15QHelpEngineCore9setupDataEv@Qt_6 6.6.0
+ _ZN15QHelpEngineCoreC1EP22QHelpEngineCorePrivateP7QObject@Qt_6 6.8.0
  _ZN15QHelpEngineCoreC1ERK7QStringP7QObject@Qt_6 6.6.0
+ _ZN15QHelpEngineCoreC2EP22QHelpEngineCorePrivateP7QObject@Qt_6 6.8.0
  _ZN15QHelpEngineCoreC2ERK7QStringP7QObject@Qt_6 6.6.0
  _ZN15QHelpEngineCoreD0Ev@Qt_6 6.6.0
  _ZN15QHelpEngineCoreD1Ev@Qt_6 6.6.0
@@ -67,7 +70,10 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZN15QHelpIndexModel13insertIndicesEv@Qt_6 6.6.0
  _ZN15QHelpIndexModel16staticMetaObjectE@Qt_6 6.6.0
  _ZN15QHelpIndexModel20indexCreationStartedEv@Qt_6 6.6.0
+ _ZN15QHelpIndexModel27createIndexForCurrentFilterEv@Qt_6 6.8.0
  _ZN15QHelpIndexModel6filterERK7QStringS2_@Qt_6 6.6.0
+ _ZN15QHelpIndexModelC1EP15QHelpEngineCore@Qt_6 6.8.0
+ _ZN15QHelpIndexModelC2EP15QHelpEngineCore@Qt_6 6.8.0
  _ZN15QHelpIndexModelD0Ev@Qt_6 6.6.0
  _ZN15QHelpIndexModelD1Ev@Qt_6 6.6.0
  _ZN15QHelpIndexModelD2Ev@Qt_6 6.6.0
@@ -94,6 +100,9 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZN17QHelpContentModel15contentsCreatedEv@Qt_6 6.6.0
  _ZN17QHelpContentModel16staticMetaObjectE@Qt_6 6.6.0
  _ZN17QHelpContentModel23contentsCreationStartedEv@Qt_6 6.6.0
+ _ZN17QHelpContentModel30createContentsForCurrentFilterEv@Qt_6 6.8.0
+ _ZN17QHelpContentModelC1EP15QHelpEngineCore@Qt_6 6.8.0
+ _ZN17QHelpContentModelC2EP15QHelpEngineCore@Qt_6 6.8.0
  _ZN17QHelpContentModelD0Ev@Qt_6 6.6.0
  _ZN17QHelpContentModelD1Ev@Qt_6 6.6.0
  _ZN17QHelpContentModelD2Ev@Qt_6 6.6.0
@@ -159,6 +168,23 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZN19QCompressedHelpInfoD2Ev@Qt_6 6.6.0
  _ZN19QCompressedHelpInfoaSEOS_@Qt_6 6.6.0
  _ZN19QCompressedHelpInfoaSERKS_@Qt_6 6.6.0
+ _ZN21QHelpSearchEngineCore11qt_metacallEN11QMetaObject4CallEiPPv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore11qt_metacastEPKc@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore14cancelIndexingEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore15cancelSearchingEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore15indexingStartedEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore16indexingFinishedEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore16searchingStartedEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore16staticMetaObjectE@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore17searchingFinishedEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore20reindexDocumentationEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore26scheduleIndexDocumentationEv@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCore6searchERK7QString@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCoreC1EP15QHelpEngineCoreP7QObject@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCoreC2EP15QHelpEngineCoreP7QObject@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCoreD0Ev@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCoreD1Ev@Qt_6 6.8.0
+ _ZN21QHelpSearchEngineCoreD2Ev@Qt_6 6.8.0
  _ZN22QHelpSearchQueryWidget11changeEventEP6QEvent@Qt_6 6.6.0
  _ZN22QHelpSearchQueryWidget11qt_metacallEN11QMetaObject4CallEiPPv@Qt_6 6.6.0
  _ZN22QHelpSearchQueryWidget11qt_metacastEPKc@Qt_6 6.6.0
@@ -204,10 +230,12 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZNK15QHelpEngineCore10metaObjectEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore11customValueERK7QStringRK8QVariant@Qt_6 6.6.0
  _ZNK15QHelpEngineCore12filterEngineEv@Qt_6 6.6.0
+ _ZNK15QHelpEngineCore12requestIndexERK7QString@Qt_6 6.8.0
  _ZNK15QHelpEngineCore13currentFilterEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore13customFiltersEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore14autoSaveFilterEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore14collectionFileEv@Qt_6 6.6.0
+ _ZNK15QHelpEngineCore14requestContentERK7QString@Qt_6 6.8.0
  _ZNK15QHelpEngineCore16filterAttributesERK7QString@Qt_6 6.6.0
  _ZNK15QHelpEngineCore16filterAttributesEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore16usesFilterEngineEv@Qt_6 6.6.0
@@ -217,6 +245,8 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZNK15QHelpEngineCore22documentsForIdentifierERK7QString@Qt_6 6.6.0
  _ZNK15QHelpEngineCore22documentsForIdentifierERK7QStringS2_@Qt_6 6.6.0
  _ZNK15QHelpEngineCore24registeredDocumentationsEv@Qt_6 6.6.0
+ _ZNK15QHelpEngineCore28requestIndexForCurrentFilterEv@Qt_6 6.8.0
+ _ZNK15QHelpEngineCore30requestContentForCurrentFilterEv@Qt_6 6.8.0
  _ZNK15QHelpEngineCore5errorEv@Qt_6 6.6.0
  _ZNK15QHelpEngineCore8fileDataERK4QUrl@Qt_6 6.6.0
  _ZNK15QHelpEngineCore8findFileERK4QUrl@Qt_6 6.6.0
@@ -269,6 +299,10 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZNK19QCompressedHelpInfo6isNullEv@Qt_6 6.6.0
  _ZNK19QCompressedHelpInfo7versionEv@Qt_6 6.6.0
  _ZNK19QCompressedHelpInfo9componentEv@Qt_6 6.6.0
+ _ZNK21QHelpSearchEngineCore10metaObjectEv@Qt_6 6.8.0
+ _ZNK21QHelpSearchEngineCore11searchInputEv@Qt_6 6.8.0
+ _ZNK21QHelpSearchEngineCore13searchResultsEii@Qt_6 6.8.0
+ _ZNK21QHelpSearchEngineCore17searchResultCountEv@Qt_6 6.8.0
  _ZNK22QHelpSearchQueryWidget10metaObjectEv@Qt_6 6.6.0
  _ZNK22QHelpSearchQueryWidget11searchInputEv@Qt_6 6.6.0
  _ZNK22QHelpSearchQueryWidget13isCompactModeEv@Qt_6 6.6.0
@@ -276,7 +310,6 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZNK23QHelpSearchResultWidget10metaObjectEv@Qt_6 6.6.0
  _ZNK25QHelpFilterSettingsWidget10metaObjectEv@Qt_6 6.6.0
  _ZNK25QHelpFilterSettingsWidget13applySettingsEP17QHelpFilterEngine@Qt_6 6.6.0
- _ZSt19piecewise_construct@Qt_6 6.6.0
  _ZTI11QHelpEngine@Qt_6 6.6.0
  _ZTI15QHelpEngineCore@Qt_6 6.6.0
  _ZTI15QHelpIndexModel@Qt_6 6.6.0
@@ -285,6 +318,7 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZTI17QHelpFilterEngine@Qt_6 6.6.0
  _ZTI17QHelpSearchEngine@Qt_6 6.6.0
  _ZTI18QHelpContentWidget@Qt_6 6.6.0
+ _ZTI21QHelpSearchEngineCore@Qt_6 6.8.0
  _ZTI22QHelpSearchQueryWidget@Qt_6 6.6.0
  _ZTI23QHelpSearchResultWidget@Qt_6 6.6.0
  _ZTI25QHelpFilterSettingsWidget@Qt_6 6.6.0
@@ -296,6 +330,7 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZTS17QHelpFilterEngine@Qt_6 6.6.0
  _ZTS17QHelpSearchEngine@Qt_6 6.6.0
  _ZTS18QHelpContentWidget@Qt_6 6.6.0
+ _ZTS21QHelpSearchEngineCore@Qt_6 6.8.0
  _ZTS22QHelpSearchQueryWidget@Qt_6 6.6.0
  _ZTS23QHelpSearchResultWidget@Qt_6 6.6.0
  _ZTS25QHelpFilterSettingsWidget@Qt_6 6.6.0
@@ -307,6 +342,7 @@ libQt6Help.so.6 libqt6help6 #MINVER#
  _ZTV17QHelpFilterEngine@Qt_6 6.6.0
  _ZTV17QHelpSearchEngine@Qt_6 6.6.0
  _ZTV18QHelpContentWidget@Qt_6 6.6.0
+ _ZTV21QHelpSearchEngineCore@Qt_6 6.8.0
  _ZTV22QHelpSearchQueryWidget@Qt_6 6.6.0
  _ZTV23QHelpSearchResultWidget@Qt_6 6.6.0
  _ZTV25QHelpFilterSettingsWidget@Qt_6 6.6.0
