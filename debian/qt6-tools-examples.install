@@ -5,11 +5,14 @@ usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/designer/calculatorform/calculatorfor
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/designer/calculatorform_mi/calculatorform_mi
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/help/contextsensitivehelp/contextsensitivehelp
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/arrowpad/arrowpad
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/arrowpad/arrowpad_en.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/arrowpad/arrowpad_fr.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/arrowpad/arrowpad_nl.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/hellotr/hellotr
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/hellotr/hellotr_en.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/hellotr/hellotr_la.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/i18n/i18n
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/trollprint/trollprint
+usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/trollprint/trollprint_en.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/linguist/trollprint/trollprint_pt.qm
 usr/lib/${DEB_HOST_MULTIARCH}/qt6/examples/uitools/textfinder/textfinder
