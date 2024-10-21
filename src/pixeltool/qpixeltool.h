@@ -29,6 +29,8 @@ public slots:
 #if QT_CONFIG(clipboard)
     void copyToClipboard();
     void copyColorToClipboard();
+    void copyScreenShotToClipboard();
+    void copyScreenInfoToClipboard();
 #endif
     void saveToFile();
     void increaseGridSize() { setGridSize(m_gridSize + 1); }
@@ -66,7 +68,7 @@ private:
     int m_gridSize;
     int m_lcdMode;
 
-    int m_updateId;
+    int m_updateId = 0;
     int m_displayZoomId = 0;
     int m_displayGridSizeId = 0;
 

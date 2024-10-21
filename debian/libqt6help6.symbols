@@ -1,6 +1,6 @@
 # SymbolsHelper-Confirmed: 6.6.0 amd64
 libQt6Help.so.6 libqt6help6 #MINVER#
-| libqt6help6 #MINVER#, qt6-help-abi (= 6.6.1)
+| libqt6help6 #MINVER#, qt6-help-abi (= 6.8.0)
 * Build-Depends-Package: qt6-tools-dev
  Qt_6@Qt_6 6.6.0
  (symver)Qt_6_PRIVATE_API 0

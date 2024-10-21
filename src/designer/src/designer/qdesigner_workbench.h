@@ -29,6 +29,7 @@ class QMenuBar;
 class QToolBar;
 class QMdiSubWindow;
 class QCloseEvent;
+class QScreen;
 class ToolBarManager;
 
 class QDesignerFormEditorInterface;
@@ -41,7 +42,7 @@ class QDesignerWorkbench: public QObject
     Q_OBJECT
 
 public:
-    QDesignerWorkbench();
+    explicit QDesignerWorkbench(const QStringList &pluginPaths);
     ~QDesignerWorkbench() override;
 
     UIMode mode() const;
@@ -63,11 +64,6 @@ public:
     QDesignerActions *actionManager() const;
 
     QActionGroup *modeActionGroup() const;
-
-    QRect availableGeometry() const;
-    QRect desktopGeometry() const;
-
-    int marginHint() const;
 
     bool readInForm(const QString &fileName) const;
     bool writeOutForm(QDesignerFormWindowInterface *formWindow, const QString &fileName) const;
@@ -108,6 +104,8 @@ private slots:
     void slotFileDropped(const QString &f);
 
 private:
+    QScreen *screen() const;
+    QRect availableFormGeometry() const;
     QWidget *magicalParent(const QWidget *w) const;
     Qt::WindowFlags magicalWindowFlags(const QWidget *widgetForFlags) const;
     QDesignerFormWindowManagerInterface *formWindowManager() const;
@@ -150,9 +148,9 @@ private:
     // interface modes.
     class Position {
     public:
-        Position(const QDockWidget *dockWidget);
-        Position(const QMdiSubWindow *mdiSubWindow, const QPoint &mdiAreaOffset);
-        Position(const QWidget *topLevelWindow, const QPoint &desktopTopLeft);
+        explicit Position(const QDockWidget *dockWidget);
+        explicit Position(const QMdiSubWindow *mdiSubWindow);
+        explicit Position(const QWidget *topLevelWindow);
 
         void applyTo(QMdiSubWindow *mdiSubWindow, const QPoint &mdiAreaOffset) const;
         void applyTo(QWidget *topLevelWindow, const QPoint &desktopTopLeft) const;

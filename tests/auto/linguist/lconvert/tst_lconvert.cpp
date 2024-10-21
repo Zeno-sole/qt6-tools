@@ -1,5 +1,5 @@
 // Copyright (C) 2016 The Qt Company Ltd.
-// SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+// SPDX-License-Identifier: LicenseRef-Qt-Commercial OR GPL-3.0-only
 
 #include <QtTest/QtTest>
 #include <QtCore/QFile>
@@ -42,7 +42,7 @@ private:
 void tst_lconvert::initTestCase()
 {
     if (!QFile::exists(dataDir + QLatin1String("plural-1.po")))
-        QProcess::execute(QLatin1String("perl"), QStringList() << dataDir + QLatin1String("makeplurals.pl") << dataDir + QLatin1String(""));
+        QProcess::execute(QLatin1String(PERL_EXECUTABLE), QStringList() << dataDir + QLatin1String("makeplurals.pl") << dataDir + QLatin1String(""));
     QVERIFY(QFile::exists(dataDir + QLatin1String("plural-1.po")));
 }
 
@@ -200,6 +200,7 @@ void tst_lconvert::converts_data()
     QTest::newRow("broken utf8") << "test-broken-utf8.po" << "test-broken-utf8.po.out" << "po";
     QTest::newRow("line joins") << "test-slurp.po" << "test-slurp.po.out" << "po";
     QTest::newRow("escapes") << "test-escapes.po" << "test-escapes.po.out" << "po";
+    QTest::newRow("xlf seg") << "test-trans_seg.xlf" << "test-trans_seg.ts.out" << "ts";
 }
 
 void tst_lconvert::converts()
