@@ -29,11 +29,9 @@ in Qt6 Tools source code). Fix the build by removing attempts to set Qt defs
 for litehtml/gumbo and by using the new path to the primary header.
 ---
 
-diff --git a/src/assistant/CMakeLists.txt b/src/assistant/CMakeLists.txt
-index 868eefdad..9253ed815 100644
 --- a/src/assistant/CMakeLists.txt
 +++ b/src/assistant/CMakeLists.txt
-@@ -35,13 +35,6 @@ if(TARGET qlitehtml)
+@@ -36,13 +36,6 @@ if(TARGET qlitehtml)
      # but found in the system, because they are imported only to the subdirectory scope
      # where find_package was called. But that's fine, we wouldn't be able to set compiler flags
      # on them anyway.
@@ -45,13 +43,11 @@ index 868eefdad..9253ed815 100644
 -        qt_disable_warnings(gumbo)
 -    endif()
      qt_disable_warnings(qlitehtml)
-     qt_handle_multi_config_output_dirs(qlitehtml)
      set_target_properties(qlitehtml PROPERTIES
-diff --git src/assistant/qlitehtml/src/container_qpainter_p.h b/src/assistant/qlitehtml/src/container_qpainter_p.h
-index 074f8d7..ecfa2f3 100644
+         RUNTIME_OUTPUT_DIRECTORY "${QT_BUILD_DIR}/${INSTALL_BINDIR}"
 --- a/src/assistant/qlitehtml/src/container_qpainter_p.h
 +++ b/src/assistant/qlitehtml/src/container_qpainter_p.h
-@@ -30,7 +30,7 @@
+@@ -5,7 +5,7 @@
  
  #include "container_qpainter.h"
  
