@@ -1,12 +1,16 @@
-qt6-tools (6.8.0-0deepin) UNRELEASED; urgency=medium
+qt6-tools (6.8.0-0deepin1) unstable; urgency=medium
 
+  [ Tianyu Chen ]
   * New upstream release (6.8.0).
   * Bump Qt B-Ds to 6.6.1.
   * Update ABI to 6.6.1.
   * Update list of installed files.
   * Update symbols from buildlogs.
 
- -- Tianyu Chen <sweetyfish@deepin.org>  Mon, 21 Oct 2024 17:21:25 +0800
+  [ lichenggang ]
+  * update debian/qt6-tools-doc-html.install 
+
+ -- lichenggang <lichenggang@deepin.org>  Thu, 31 Oct 2024 21:26:09 +0800
 
 qt6-tools (6.6.1-1deepin1) experimental; urgency=medium
 
