@@ -1752,7 +1752,6 @@ libQt6Designer.so.6 libqt6designer6 #MINVER#
  _ZN18qdesigner_internal4Grid14fromVariantMapERK4QMapI7QString8QVariantE@Qt_6 6.6.0
  _ZN18qdesigner_internal4GridC1Ev@Qt_6 6.6.0
  _ZN18qdesigner_internal4GridC2Ev@Qt_6 6.6.0
- _ZN18qdesigner_internal5qHashERKNS_22PropertySheetIconValueEm@Qt_6 6.8.0
  _ZN18qdesigner_internal5qtifyERK7QString@Qt_6 6.6.0
  _ZN18qdesigner_internal6Layout10undoLayoutEv@Qt_6 6.6.0
  _ZN18qdesigner_internal6Layout11breakLayoutEv@Qt_6 6.6.0
