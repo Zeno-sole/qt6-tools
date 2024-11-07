@@ -1,3 +1,9 @@
+qt6-tools (6.8.0-0deepin3) unstable; urgency=medium
+
+  * update debian/changelog
+
+ -- lichenggang <lichenggang@deepin.org>  Thu, 07 Nov 2024 16:42:20 +0800
+
 qt6-tools (6.8.0-0deepin2) unstable; urgency=medium
 
   [ Tianyu Chen ]
